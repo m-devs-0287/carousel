@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("https://cdn.pixabay.com/photo/2019/05/27/14/43/pattern-4232865_960_720.png");
+  background-size: cover;
+}
+
+.carousel {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 10px rgba(0, 0, 0, 0.3);
+  height: 530px;
+  width: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.img-container {
+  display: flex;
+  height: 500px;
+  transform: translateX(0px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.img {
+  width: 500px;
+  min-width: 500px;
+  height: 500px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.buttons-container {
+  flex-grow: 1;
+  display: flex;
+  gap: 4px;
+}
+
+.buttons-container button {
+  flex-grow: 1;
+  border: 0;
+  background: rgba(70, 131, 180, 0.486);
+  color: white;
+  cursor: pointer;
+}
